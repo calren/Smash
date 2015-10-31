@@ -1,10 +1,27 @@
 package october31;
 
+import java.util.Scanner;
+
 public class ScreenNameMaker {
+	static Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		askFirstName();
+	}
 
 	/*
-	 * ask the user to enter their first and last name separated by a space
-	 * store it in a String variable called name
+	 * ask the user to enter their first name and store it in a String variable
+	 * called first name
+	 */
+	private static void askFirstName() {
+		System.out.println("What's your first name?");
+		String s = scan.next();
+		System.out.println("Entered first name: " + s);
+	}
+
+	/*
+	 * ask the user to enter their last name and store it in a String variable
+	 * called last name
 	 */
 
 	/*
