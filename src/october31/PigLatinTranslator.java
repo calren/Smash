@@ -1,12 +1,25 @@
 package october31;
 
+import java.util.Scanner;
+
+/**
+ * Write a description of class PigLatinTranslator here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
 public class PigLatinTranslator {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String wordEntered = input.next();
+		System.out.println(wordEntered + " in pig latin is: " + getPigLatinWord(wordEntered));
+	}
 
 	/*
 	 * Given a word, return its pig latin translation
 	 */
-	public String getPigLatinWord(String word) {
-
+	public static String getPigLatinWord(String word) {
+		return "";
 	}
 
 	/*
