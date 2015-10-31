@@ -1,7 +1,5 @@
 package october31;
 
-import java.util.Scanner;
-
 /**
  * Write a description of class PigLatinTranslator here.
  *
@@ -9,10 +7,8 @@ import java.util.Scanner;
  * @version (a version number or a date)
  */
 public class PigLatinTranslator {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		String wordEntered = input.next();
-		System.out.println(wordEntered + " in pig latin is: " + getPigLatinWord(wordEntered));
+	public static void main(String wordToTranslate) {
+		System.out.println(wordToTranslate + " in pig latin is: " + getPigLatinWord(wordToTranslate));
 	}
 
 	/*
@@ -37,5 +33,4 @@ public class PigLatinTranslator {
 	 * 3. If a word starts with a vowel add the word "way" at the end of the
 	 * word. Example: Awesome = Awesome +way = Awesomeway
 	 */
-
 }
