@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class ScreenNameMaker {
 	static Scanner scan = new Scanner(System.in);
+	static String firstName;
+	static String lastName;
+	static String holiday;
+	static String movieCharacter;
 
 	public static void main(String[] args) {
 		askFirstName();
@@ -15,24 +19,26 @@ public class ScreenNameMaker {
 	 */
 	private static void askFirstName() {
 		System.out.println("What's your first name?");
-		String s = scan.next();
-		System.out.println("Entered first name: " + s);
+		firstName = scan.next();
 	}
-
-	/*
-	 * ask the user to enter their last name and store it in a String variable
-	 * called last name
-	 */
 
 	/*
 	 * ask the user to enter their favorite holiday and store it in a String
 	 * variable called holiday
 	 */
+	public static void askFavoriteHoliday() {
+		System.out.println("holiday");
+		holiday = scan.next();
+	}
 
 	/*
 	 * ask the user to enter their favorite movie character and store it in a
 	 * String variable called movieCharacterName
 	 */
+	public static void askMovieCharcter() {
+		System.out.println("movie character");
+		movieCharacter = scan.next();
+	}
 
 	/*
 	 * a final method that prints out the screen name with the following rules:
@@ -41,5 +47,11 @@ public class ScreenNameMaker {
 	 * letter of your favorite holiday 4) The first four letters of your
 	 * favorite movie character
 	 */
+	public static void getScreenName() {
+		int sizeOfLastName = lastName.length();
+		Character c = firstName.charAt(0);
+		String s = firstName.charAt(0) + firstName.charAt(1) + lastName.charAt(sizeOfLastName - 2)
+				+ lastName.charAt(sizeOfLastName - 2);
+	}
 
 }
