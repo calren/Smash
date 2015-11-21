@@ -1,6 +1,6 @@
 package november21;
 
-public class arrraySumAndAverage {
+public class basketballPlayerStats {
 
 	/**
 	 * Given a players scores for the season, print the 1) the number of games
