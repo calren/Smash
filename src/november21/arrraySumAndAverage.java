@@ -8,8 +8,35 @@ public class arrraySumAndAverage {
 	 * score per game and 4) player's lowest score
 	 */
 
-	public void getStats(int[] scores) {
+	public static void main() {
+		System.out.println("games played: " + getGamesPlayed(STEPHEN_CURRY));
+		System.out.println("average score: " + getAverageScore(STEPHEN_CURRY));
+		System.out.println("max score: " + getMaxScore(STEPHEN_CURRY));
+		System.out.println("min score: " + getMinScore(STEPHEN_CURRY));
+	}
 
+	private static int getGamesPlayed(int[] stats) {
+
+		// TODO change this
+		return 0;
+	}
+
+	private static int getAverageScore(int[] stats) {
+
+		// TODO change this
+		return 0;
+	}
+
+	private static int getMaxScore(int[] stats) {
+
+		// TODO change this
+		return 0;
+	}
+
+	private static int getMinScore(int[] stats) {
+
+		// TODO change this
+		return 0;
 	}
 
 	public static int[] STEPHEN_CURRY = { 40, 25, 53, 30, 31, 34, 24, 22, 28, 46, 34, 37 };
