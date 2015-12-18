@@ -5,6 +5,25 @@ import java.util.Scanner;
 
 public class PresentOrCoal {
 
+	/*
+	 * We're going to create a game for users to get a chance at getting a
+	 * present We start with an array with 20 elements, and 3 of these elements
+	 * will represent presents The rest of the elements will be represent coal
+	 *
+	 * At the beginning of the game, the program chooses 3 random array elements
+	 * to be presents
+	 *
+	 * The user then gets 3 chances to get one or multiple presents For each
+	 * attempt the user has, they chose a random number between 1 to 20 If they
+	 * were lucky and chose an array element that was a present, they win a
+	 * present
+	 *
+	 * 
+	 * For bonus: we can chose 3 random array elements to be presents, and also
+	 * have 2 random array elements to be a TRY AGAIN. so if the user chooses
+	 * one of the TRY AGAIN elements, they should get another chance and not
+	 * lose an attempt
+	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
