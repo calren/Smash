@@ -27,5 +27,4 @@ public class magic8 {
 	private static int getRandomNumber(int upperBound) {
 		return (new Random()).nextInt((upperBound) + 1);
 	}
-
 }

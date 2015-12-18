@@ -28,7 +28,6 @@ public class basketballPlayerStats {
 	}
 
 	private static int getMaxScore(int[] stats) {
-
 		// TODO change this
 		return 0;
 	}
