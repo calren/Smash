@@ -18,7 +18,7 @@ public class PresentOrCoal {
 	 * were lucky and chose an array element that was a present, they win a
 	 * present
 	 *
-	 * 
+	 *
 	 * For bonus: we can chose 3 random array elements to be presents, and also
 	 * have 2 random array elements to be a TRY AGAIN. so if the user chooses
 	 * one of the TRY AGAIN elements, they should get another chance and not
@@ -72,6 +72,11 @@ public class PresentOrCoal {
 
 	}
 
+	/*
+	 * Gives you a random number when you give a min and a max For example, if
+	 * you call getRandomInt(0, 5), it will give you a random number between 0
+	 * and 5, inclusive. So it could give you 0, 1, 2, 3, 4, or 5.
+	 */
 	public static int getRandomInt(int min, int max) {
 		Random rand = new Random();
 		int randomNum = rand.nextInt((max - min) + 1) + min;
