@@ -25,9 +25,5 @@ public class reviewTemplate {
 		int[] numbers = { a, b, c, d, e };
 		int sumOfAllNumbers = 0;
 
-		// 12 + 14 + 8 + 6 + 2;
-
-		// 34
-
 	}
 }
