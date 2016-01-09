@@ -20,7 +20,7 @@ public class PresentOrCoalTemplate {
 	 *
 	 *
 	 * For bonus: we can chose 3 random array elements to be presents, and also
-	 * have 2 random array elements to be a TRY AGAIN. so if the user chooses
+	 * have 3 random array elements to be a TRY AGAIN. so if the user chooses
 	 * one of the TRY AGAIN elements, they should get another chance and not
 	 * lose an attempt
 	 */
