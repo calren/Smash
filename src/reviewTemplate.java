@@ -14,7 +14,7 @@ public class reviewTemplate {
 		// 4. print "to life" if a divided by c is equal to 1.5
 
 		// 5. print "the universe" if a is greater than c and b is greater than
-		// c
+		// c, else print "the world"
 
 		// 7. print "and everything is" if c + d = 14;
 
