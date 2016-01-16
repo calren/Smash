@@ -14,7 +14,7 @@ public class IntroductionPracticeTemplate {
 	 *
 	 * 3. [albus, moony, half blood prince, padfoot, prong]
 	 *
-	 * 4. [albus, half blood prince, padfoot, prong]
+	 * 4. [moony, half blood prince, padfoot, prong]
 	 */
 	public static void main(String[] args) {
 		List<String> magicalStrings = new ArrayList<String>();
