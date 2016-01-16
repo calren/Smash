@@ -10,7 +10,7 @@ import java.util.ArrayList; // for ArrayList
  * by joining adjacent points with a line segment,
  * and then closing it up by joining the end and start points.
  */
-public class PartyPolygons {
+public class PartyPolygonsTemplate {
 
 	static SketchPad paper = new SketchPad(400, 400);
 	static DrawingTool pencil = new DrawingTool(paper);
@@ -19,9 +19,7 @@ public class PartyPolygons {
 
 	public static void main() {
 		// add some points by calling the add function
-		add(new Point2D.Double(30, 20));
-		add(new Point2D.Double(60, 30));
-		add(new Point2D.Double(100, -10));
+
 		draw();
 	}
 
@@ -29,20 +27,15 @@ public class PartyPolygons {
 	 * This function should add point to myPolygon
 	 */
 	public static void add(Point2D.Double point) {
-		myPolygon.add(point);
 	}
 
 	/*
 	 * This function should use a for loop to go through all the points in
 	 * myPolygon and move the pencil there for each point
-	 * 
+	 *
 	 * At the end, it should close the polygon
 	 */
 	public static void draw() {
-		for (Point2D.Double point : myPolygon) {
-			pencil.move(point.getX(), point.getY());
-		}
-		pencil.move(0, 0);
 	}
 
 }
