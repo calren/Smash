@@ -31,21 +31,22 @@ public class exercise {
 		songs[0][4] = "Taylor Swift";
 		songs[1][4] = "Love Story";
 		
-//		prettyPrint2DArray(songs);
 		
 		// TODO add your favorite song to our 2D array
 		// follow the same format of the other songs, with the Artist and the Song Title
-		
-//		prettyPrint2DArray(songs); // this should print out the songs, now with your favorite song added
+
+		System.out.println("Song list after adding my favorite song");
+		prettyPrint2DArray(songs); // this should print out the songs, now with your favorite song added
 		
 		
 		// TODO use a for loop to print out all the Taylor Swift songs
-//		prettyPrint2DArray(songs); // this should print out 'Blank Space' and 'Love Story'
+		System.out.println("Best Taylor Swift songs:");
 		
 		// TODO print out all the artists without any repeats
 		// So we want to print out Taylor Swift, Drake, Beyonce, Coldplay
 		// but we don't want to print out Taylor Swift twice
 		// It could be helpful to use ArrayList<String> here
+		System.out.println("Artists:");
 		ArrayList<String> artists = new ArrayList<String>();
 		for (int i = 0; i < songs[0].length; i++) {
 			if (!artists.contains(songs[0][i])) {

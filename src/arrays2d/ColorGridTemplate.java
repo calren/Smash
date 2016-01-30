@@ -81,12 +81,13 @@ public class ColorGridTemplate {
 			 * TODO TODO TODO
 			 * You have a 5 x 5 square. Try drawing an X by setting 
 			 * certain squares to a color (it could be red, or blue, or any color you like)
+			 * You can set a certain square to a color by calling
+			 * cells[i][i].setBackground(Color.RED);
 			 */
-			cells[3][3].setBackground(Color.RED);
 			
 			/**
 			 * TODO TODO TODO
-			 * Now try setting every other row to a certain color by using a for loop appropriately
+			 * Now try setting every other row to a certain color using a for loop
 			 * For example, all boxes in the first, third, and fifth row will be red
 			 */
 		}
