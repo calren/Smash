@@ -16,13 +16,13 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.Border;
 import javax.swing.border.MatteBorder;
 
-public class ColorGrid {
+public class ColorGridTemplate {
 
 	public static void main(String[] args) {
-		new ColorGrid();
+		new ColorGridTemplate();
 	}
 
-	public ColorGrid() {
+	public ColorGridTemplate() {
 		EventQueue.invokeLater(new Runnable() {
 			@Override
 			public void run() {
@@ -79,30 +79,20 @@ public class ColorGrid {
 
 			/**
 			 * TODO TODO TODO
-			 * You have a 5 x 5 square. 
+			 * You have a 5 x 5 square. Try drawing an X by setting 
+			 * certain squares to a color (it could be red, or blue, or any color you like)
 			 */
 			cells[3][3].setBackground(Color.RED);
+			
+			/**
+			 * TODO TODO TODO
+			 * Now try setting every other row to a certain color by using a for loop appropriately
+			 * For example, all boxes in the first, third, and fifth row will be red
+			 */
 		}
 	}
 
 	public class CellPane extends JPanel {
-
-		private Color defaultBackground;
-
-		public CellPane() {
-			addMouseListener(new MouseAdapter() {
-				@Override
-				public void mouseEntered(MouseEvent e) {
-					defaultBackground = getBackground();
-					setBackground(Color.BLUE);
-				}
-
-				@Override
-				public void mouseExited(MouseEvent e) {
-					setBackground(defaultBackground);
-				}
-			});
-		}
 
 		@Override
 		public Dimension getPreferredSize() {

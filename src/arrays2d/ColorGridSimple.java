@@ -16,13 +16,13 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.Border;
 import javax.swing.border.MatteBorder;
 
-public class ColorGrid {
+public class ColorGridSimple {
 
 	public static void main(String[] args) {
-		new ColorGrid();
+		new ColorGridSimple();
 	}
 
-	public ColorGrid() {
+	public ColorGridSimple() {
 		EventQueue.invokeLater(new Runnable() {
 			@Override
 			public void run() {
@@ -77,10 +77,6 @@ public class ColorGrid {
 				}
 			}
 
-			/**
-			 * TODO TODO TODO
-			 * You have a 5 x 5 square. 
-			 */
 			cells[3][3].setBackground(Color.RED);
 		}
 	}
