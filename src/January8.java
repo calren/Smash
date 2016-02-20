@@ -2,7 +2,8 @@
 public class January8 {
 
 	public static void main(String[] args) {
-		blah3();
+		double z = 50 / 10.00;
+		System.out.print(z);
 	}
 
 	public static void blah3() {
