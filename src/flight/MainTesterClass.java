@@ -29,6 +29,7 @@ public class MainTesterClass {
 		// add HoustonToNY and NYtoLondon to flights
 
 		Trip trip = new Trip(flights);
+		//
 
 		System.out.println("the duration of the first flight from LA to Vegas is: " + LAtoVegas.getTotalFlightTime());
 
