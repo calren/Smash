@@ -7,7 +7,7 @@ public class GrammyMainClass {
 
 	public static void main(String[] args) {
 		List<Artist> artists = new ArrayList<>();
-
+		Artist a = new Artist("Lamar", 8);
 		// TODO create nine Artists objects and add each one to the artists List
 
 		GrammyAwardSeatingChart seatingChart = new GrammyAwardSeatingChart(artists);
@@ -17,6 +17,5 @@ public class GrammyMainClass {
 																	// kanye,
 																	// hunt,
 																	// snoop
-
 	}
 }

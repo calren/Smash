@@ -1,4 +1,4 @@
-package oldmcdonald;
+package oldmcdonaldclass;
 
 import java.util.Random;
 
@@ -6,27 +6,29 @@ public class Chick implements Animal {
 
 	private String myType;
 	private String mySound;
-	private boolean isAdult;
+	private String mySound2;
+	private boolean isConfused;
 
 	Chick() {
 		myType = "chick";
-		mySound = "chirp";
+		mySound = "cluck";
 	}
 
-	Chick(boolean isAdult) {
-		this.isAdult = isAdult;
+	Chick(boolean isConfused) {
+		isConfused = true;
 		myType = "chick";
-		mySound = "chirp";
+		mySound = "cluck";
+		mySound2 = "cheep";
 	}
 
 	@Override
 	public String getSound() {
-		if (isAdult) {
-			int randomInteger = randInt(1, 2);
-			if (randomInteger == 1) {
-				return "cheep";
+		if (isConfused == true) {
+			int randomNumber = randInt(1, 2);
+			if (randomNumber == 1) {
+				return mySound;
 			} else {
-				return "cluck";
+				return mySound2;
 			}
 		}
 		return mySound;

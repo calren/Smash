@@ -5,12 +5,13 @@ import java.util.Scanner;
 public class HangmanGame {
 
 	public static void main(String[] args) {
+		String[] a = { "a", "b", "c" };
 		int lives = 5;
-		String[] wordToGuess = args;
-		String[] wordToShowUser = new String[args.length];
+		String[] wordToGuess = a;
+		String[] wordToShowUser = new String[a.length];
 		Scanner input = new Scanner(System.in);
 
-		for (int i = 0; i < args.length; i++) {
+		for (int i = 0; i < a.length; i++) {
 			wordToShowUser[i] = "*";
 		}
 
@@ -23,7 +24,7 @@ public class HangmanGame {
 			// print out how many guesses the player has
 			System.out.println("You have " + lives + " lives left");
 
-			// print out _ for each letter in the word
+			// print out * for each letter in the word
 			System.out.println(getString(wordToShowUser));
 
 			// ask the user to guess a letter
