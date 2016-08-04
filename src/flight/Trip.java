@@ -16,7 +16,16 @@ public class Trip {
 	 */
 	public int getDuration() {
 		// TODO
-		return 0;
+		// get departure time of first flight, and arrival time of last flight
+		// find the difference between the two
+
+		Flight firstFlight = flights.get(0);
+		Time departureTime = firstFlight.getDepartureTime();
+
+		Flight lastFlight = flights.get(flights.size() - 1);
+		Time arrivalTime = lastFlight.getArrivalTime();
+
+		return departureTime.minutesUntil(arrivalTime);
 	}
 
 	/**
@@ -29,8 +38,24 @@ public class Trip {
 	 *         two flights in the trip
 	 */
 	public int getShortestLayover() {
-		// TODO
-		return 0;
+
+		if (flights.size() < 2) {
+			return -1;
+		}
+
+		int min = 24 * 60;
+
+		for (int i = 0; i < flights.size() - 1; i++) {
+			Flight currentFlight = flights.get(i);
+			Flight nextFlight = flights.get(i + 1);
+
+			int minutes = currentFlight.getArrivalTime().minutesUntil(nextFlight.getDepartureTime());
+			if (minutes < min) {
+				min = minutes;
+			}
+		}
+
+		return min;
 	}
 
 }

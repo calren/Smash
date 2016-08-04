@@ -15,6 +15,9 @@ public class Time {
 	 *         is negative if other is earlier than this time
 	 */
 	public int minutesUntil(Time otherTime) {
-		return 0;
+		int hourDifference = otherTime.hour - this.hour;
+		int minuteDifference = otherTime.minutes - this.minutes;
+
+		return (hourDifference * 60) + minuteDifference;
 	}
 }
